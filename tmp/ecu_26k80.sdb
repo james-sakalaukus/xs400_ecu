@@ -1,0 +1,698 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL LFSROK IEEE_FLT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F26K80 ]
+[d frameptr 4065 ]
+"464 /opt/microchip/xc8/v1.34/sources/common/doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+"63 /opt/microchip/xc8/v1.34/sources/common/double.c
+[v ___flpack __flpack `(d  1 e 4 0 ]
+"88 /opt/microchip/xc8/v1.34/sources/common/fladd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"54 /opt/microchip/xc8/v1.34/sources/common/fldiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"62 /opt/microchip/xc8/v1.34/sources/common/flmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"62 /opt/microchip/xc8/v1.34/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"20 /opt/microchip/xc8/v1.34/sources/common/flsub.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"86 /opt/microchip/xc8/v1.34/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v1.34/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v1.34/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"20 /opt/microchip/xc8/v1.34/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"15 /opt/microchip/xc8/v1.34/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"18 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t0open.c
+[v _OpenTimer0 OpenTimer0 `(v  1 e 0 0 ]
+"16 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t0write.c
+[v _WriteTimer0 WriteTimer0 `(v  1 e 0 0 ]
+[v i2_WriteTimer0 WriteTimer0 `(v  1 e 0 0 ]
+"94 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t3open.c
+[v _OpenTimer3 OpenTimer3 `(v  1 e 0 0 ]
+"12 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t3write.c
+[v _WriteTimer3 WriteTimer3 `(v  1 e 0 0 ]
+"118 /opt/microchip/xc8/v1.34/sources/pic18/plib/USART/u2open.c
+[v _Open2USART Open2USART `(v  1 e 0 0 ]
+"17 /opt/microchip/xc8/v1.34/sources/pic18/plib/USART/u2read.c
+[v _Read2USART Read2USART `(uc  1 e 1 0 ]
+"15 /opt/microchip/xc8/v1.34/sources/pic18/plib/USART/u2write.c
+[v _Write2USART Write2USART `(v  1 e 0 0 ]
+"20 /home/james/github/xs400_ecu.git/src/interrupts.c
+[v _high_isr high_isr `II(v  1 e 0 0 ]
+"55
+[v _low_isr low_isr `IIL(v  1 e 0 0 ]
+"40 /home/james/github/xs400_ecu.git/src/main.c
+[v _main main `(v  1 e 0 0 ]
+"16 /home/james/github/xs400_ecu.git/src/system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 0 0 ]
+"29 /home/james/github/xs400_ecu.git/src/user.c
+[v _putch putch `(v  1 e 0 0 ]
+"36
+[v _InitApp InitApp `(v  1 e 0 0 ]
+"108
+[v _doHeartBeat doHeartBeat `(v  1 e 0 0 ]
+[s S511 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"33320 /home/james/github/xs400_ecu.git/inc/pic18f26k80.h
+[s S520 . 1 `uc 1 LC0 1 0 :1:0 
+]
+"33320
+[s S522 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LC1 1 0 :1:1 
+]
+"33320
+[s S525 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LC2 1 0 :1:2 
+]
+"33320
+[s S528 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LC3 1 0 :1:3 
+]
+"33320
+[s S531 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LC4 1 0 :1:4 
+]
+"33320
+[s S534 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LC5 1 0 :1:5 
+]
+"33320
+[s S537 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LC6 1 0 :1:6 
+]
+"33320
+[s S540 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LC7 1 0 :1:7 
+]
+"33320
+[u S543 . 1 `S511 1 . 1 0 `S520 1 . 1 0 `S522 1 . 1 0 `S525 1 . 1 0 `S528 1 . 1 0 `S531 1 . 1 0 `S534 1 . 1 0 `S537 1 . 1 0 `S540 1 . 1 0 ]
+"33320
+"33320
+[v _LATCbits LATCbits `VES543  1 e 1 @3979 ]
+[s S126 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"33569
+[u S135 . 1 `S126 1 . 1 0 ]
+"33569
+"33569
+[v _TRISBbits TRISBbits `VES135  1 e 1 @3987 ]
+[s S84 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"33630
+[u S93 . 1 `S84 1 . 1 0 ]
+"33630
+"33630
+[v _TRISCbits TRISCbits `VES93  1 e 1 @3988 ]
+"33781
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S209 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 TMR1GIE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"33936
+[s S217 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+"33936
+[u S221 . 1 `S209 1 . 1 0 `S217 1 . 1 0 ]
+"33936
+"33936
+[v _PIE1bits PIE1bits `VES221  1 e 1 @3997 ]
+[s S181 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR1GIF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"34006
+[s S189 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+"34006
+[u S193 . 1 `S181 1 . 1 0 `S189 1 . 1 0 ]
+"34006
+"34006
+[v _PIR1bits PIR1bits `VES193  1 e 1 @3998 ]
+[s S153 . 1 `uc 1 TMR1IP 1 0 :1:0 
+`uc 1 TMR2IP 1 0 :1:1 
+`uc 1 TMR1GIP 1 0 :1:2 
+`uc 1 SSPIP 1 0 :1:3 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+`uc 1 ADIP 1 0 :1:6 
+]
+"34076
+[s S161 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+]
+"34076
+[u S165 . 1 `S153 1 . 1 0 `S161 1 . 1 0 ]
+"34076
+"34076
+[v _IPR1bits IPR1bits `VES165  1 e 1 @3999 ]
+[s S299 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP1IE 1 0 :1:1 
+`uc 1 CCP2IE 1 0 :1:2 
+`uc 1 CTMUIE 1 0 :1:3 
+`uc 1 TX2IE 1 0 :1:4 
+`uc 1 RC2IE 1 0 :1:5 
+]
+"34323
+[s S306 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+]
+"34323
+[s S309 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+]
+"34323
+[s S312 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TXB0IE 1 0 :1:2 
+]
+"34323
+[s S315 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TXB1IE 1 0 :1:3 
+]
+"34323
+[s S318 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXB2IE 1 0 :1:4 
+]
+"34323
+[s S321 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXBNIE 1 0 :1:4 
+]
+"34323
+[u S324 . 1 `S299 1 . 1 0 `S306 1 . 1 0 `S309 1 . 1 0 `S312 1 . 1 0 `S315 1 . 1 0 `S318 1 . 1 0 `S321 1 . 1 0 ]
+"34323
+"34323
+[v _PIE3bits PIE3bits `VES324  1 e 1 @4003 ]
+[s S268 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP1IF 1 0 :1:1 
+`uc 1 CCP2IF 1 0 :1:2 
+`uc 1 CTMUIF 1 0 :1:3 
+`uc 1 TX2IF 1 0 :1:4 
+`uc 1 RC2IF 1 0 :1:5 
+]
+"34405
+[s S275 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+]
+"34405
+[s S278 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXBNIF 1 0 :1:4 
+]
+"34405
+[u S281 . 1 `S268 1 . 1 0 `S275 1 . 1 0 `S278 1 . 1 0 ]
+"34405
+"34405
+[v _PIR3bits PIR3bits `VES281  1 e 1 @4004 ]
+[s S237 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP1IP 1 0 :1:1 
+`uc 1 CCP2IP 1 0 :1:2 
+`uc 1 CTMUIP 1 0 :1:3 
+`uc 1 TX2IP 1 0 :1:4 
+`uc 1 RC2IP 1 0 :1:5 
+]
+"34467
+[s S244 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIP 1 0 :1:1 
+]
+"34467
+[s S247 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TXBNIP 1 0 :1:4 
+]
+"34467
+[u S250 . 1 `S237 1 . 1 0 `S244 1 . 1 0 `S247 1 . 1 0 ]
+"34467
+"34467
+[v _IPR3bits IPR3bits `VES250  1 e 1 @4005 ]
+[s S27 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"36547
+[s S36 . 1 `uc 1 TX9D2 1 0 :1:0 
+`uc 1 TRMT2 1 0 :1:1 
+`uc 1 BRGH2 1 0 :1:2 
+`uc 1 SENDB2 1 0 :1:3 
+`uc 1 SYNC2 1 0 :1:4 
+`uc 1 TXEN2 1 0 :1:5 
+`uc 1 TX92 1 0 :1:6 
+`uc 1 CSRC2 1 0 :1:7 
+]
+"36547
+[s S45 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_92 1 0 :1:6 
+]
+"36547
+[s S48 . 1 `uc 1 TXD82 1 0 :1:0 
+]
+"36547
+[u S50 . 1 `S27 1 . 1 0 `S36 1 . 1 0 `S45 1 . 1 0 `S48 1 . 1 0 ]
+"36547
+"36547
+[v _TXSTA2bits TXSTA2bits `VES50  1 e 1 @4026 ]
+[s S358 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"38343
+[s S360 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+"38343
+[s S363 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+"38343
+[s S366 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+"38343
+[s S369 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+"38343
+[s S372 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_CM 1 0 :1:5 
+]
+"38343
+[s S375 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 nCM 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+"38343
+[s S384 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+`uc 1 CM 1 0 :1:5 
+]
+"38343
+[u S391 . 1 `S358 1 . 1 0 `S360 1 . 1 0 `S363 1 . 1 0 `S366 1 . 1 0 `S369 1 . 1 0 `S372 1 . 1 0 `S375 1 . 1 0 `S384 1 . 1 0 ]
+"38343
+"38343
+[v _RCONbits RCONbits `VES391  1 e 1 @4048 ]
+"38577
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+[s S434 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"39554
+[s S443 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"39554
+[s S452 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"39554
+"39554
+"39554
+[u S469 . 1 `S434 1 . 1 0 `S443 1 . 1 0 `S452 1 . 1 0 `S443 1 . 1 0 `S452 1 . 1 0 ]
+"39554
+"39554
+[v _INTCONbits INTCONbits `VES469  1 e 1 @4082 ]
+"42311
+"42311
+[v _HFIOFS HFIOFS `VEb  1 e 0 @32410 ]
+"42775
+[v _RC2IF RC2IF `VEb  1 e 0 @32037 ]
+"44735
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"44789
+[v _TMR3IF TMR3IF `VEb  1 e 0 @32009 ]
+"21 /home/james/github/xs400_ecu.git/inc/user.h
+[v _uart1CharacterReceived uart1CharacterReceived `VEuc  1 e 1 0 ]
+"22
+[v _uart2CharacterReceived uart2CharacterReceived `VEuc  1 e 1 0 ]
+"23
+[v _unhandledIRQ unhandledIRQ `VEuc  1 e 1 0 ]
+"24
+[v _receivedCharacter receivedCharacter `VEuc  1 e 1 0 ]
+"25
+[v _updateDisplay updateDisplay `VEuc  1 e 1 0 ]
+"32263 /opt/microchip/xc8/v1.34/include/pic18f26k80.h
+[v _TXREG2 TXREG2 `VEuc  1 e 1 @3961 ]
+"32282
+[v _RCREG2 RCREG2 `VEuc  1 e 1 @3962 ]
+"32301
+[v _SPBRG2 SPBRG2 `VEuc  1 e 1 @3963 ]
+"32320
+[v _SPBRGH2 SPBRGH2 `VEuc  1 e 1 @3964 ]
+[s S915 . 1 `uc 1 TMR3GIE 1 0 :1:0 
+`uc 1 TMR3IE 1 0 :1:1 
+`uc 1 HLVDIE 1 0 :1:2 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 OSCFIE 1 0 :1:7 
+]
+"34144
+[s S922 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIE 1 0 :1:2 
+]
+"34144
+[u S925 . 1 `S915 1 . 1 0 `S922 1 . 1 0 ]
+"34144
+"34144
+[v _PIE2bits PIE2bits `VES925  1 e 1 @4000 ]
+[s S891 . 1 `uc 1 TMR3GIF 1 0 :1:0 
+`uc 1 TMR3IF 1 0 :1:1 
+`uc 1 HLVDIF 1 0 :1:2 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 OSCFIF 1 0 :1:7 
+]
+"34197
+[s S898 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LVDIF 1 0 :1:2 
+]
+"34197
+[u S901 . 1 `S891 1 . 1 0 `S898 1 . 1 0 ]
+"34197
+"34197
+[v _PIR2bits PIR2bits `VES901  1 e 1 @4001 ]
+"34506
+[v _RCSTA2 RCSTA2 `VEuc  1 e 1 @4006 ]
+[s S1121 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"34544
+[s S1130 . 1 `uc 1 RX9D2 1 0 :1:0 
+`uc 1 OERR2 1 0 :1:1 
+`uc 1 FERR2 1 0 :1:2 
+`uc 1 ADDEN2 1 0 :1:3 
+`uc 1 CREN2 1 0 :1:4 
+`uc 1 SREN2 1 0 :1:5 
+`uc 1 RX92 1 0 :1:6 
+`uc 1 SPEN2 1 0 :1:7 
+]
+"34544
+[s S1139 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_92 1 0 :1:6 
+]
+"34544
+[s S1142 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC92 1 0 :1:6 
+]
+"34544
+[s S1145 . 1 `uc 1 RCD82 1 0 :1:0 
+]
+"34544
+[u S1147 . 1 `S1121 1 . 1 0 `S1130 1 . 1 0 `S1139 1 . 1 0 `S1142 1 . 1 0 `S1145 1 . 1 0 ]
+"34544
+"34544
+[v _RCSTA2bits RCSTA2bits `VES1147  1 e 1 @4006 ]
+"35750
+[v _T3GCON T3GCON `VEuc  1 e 1 @4016 ]
+[s S939 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 T3GGO_NOT_T3DONE 1 0 :1:3 
+]
+"35784
+[s S942 . 1 `uc 1 T3GSS 1 0 :2:0 
+`uc 1 T3GVAL 1 0 :1:2 
+`uc 1 T3GGO_nT3DONE 1 0 :1:3 
+`uc 1 T3GSPM 1 0 :1:4 
+`uc 1 T3GTM 1 0 :1:5 
+`uc 1 T3GPOL 1 0 :1:6 
+`uc 1 TMR3GE 1 0 :1:7 
+]
+"35784
+[s S950 . 1 `uc 1 T3GSS0 1 0 :1:0 
+`uc 1 T3GSS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 T3GGO 1 0 :1:3 
+]
+"35784
+[s S955 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_T3DONE 1 0 :1:3 
+]
+"35784
+[s S958 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 nT3DONE 1 0 :1:3 
+]
+"35784
+[u S961 . 1 `S939 1 . 1 0 `S942 1 . 1 0 `S950 1 . 1 0 `S955 1 . 1 0 `S958 1 . 1 0 ]
+"35784
+"35784
+[v _T3GCONbits T3GCONbits `VES961  1 e 1 @4016 ]
+"35853
+[v _T3CON T3CON `VEuc  1 e 1 @4017 ]
+[s S990 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_T3SYNC 1 0 :1:2 
+]
+"35891
+[s S993 . 1 `uc 1 TMR3ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nT3SYNC 1 0 :1:2 
+`uc 1 SOSCEN 1 0 :1:3 
+`uc 1 T3CKPS 1 0 :2:4 
+`uc 1 TMR3CS 1 0 :2:6 
+]
+"35891
+[s S1000 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T3CKPS0 1 0 :1:4 
+`uc 1 T3CKPS1 1 0 :1:5 
+`uc 1 TMR3CS0 1 0 :1:6 
+`uc 1 TMR3CS1 1 0 :1:7 
+]
+"35891
+[s S1006 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 RD163 1 0 :1:7 
+]
+"35891
+[s S1009 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SOSCEN3 1 0 :1:3 
+]
+"35891
+[s S1012 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 T3RD16 1 0 :1:7 
+]
+"35891
+[u S1015 . 1 `S990 1 . 1 0 `S993 1 . 1 0 `S1000 1 . 1 0 `S1006 1 . 1 0 `S1009 1 . 1 0 `S1012 1 . 1 0 ]
+"35891
+"35891
+[v _T3CONbits T3CONbits `VES1015  1 e 1 @4017 ]
+"35971
+[v _TMR3L TMR3L `VEuc  1 e 1 @4018 ]
+"35990
+[v _TMR3H TMR3H `VEuc  1 e 1 @4019 ]
+"36513
+[v _TXSTA2 TXSTA2 `VEuc  1 e 1 @4026 ]
+"38653
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S835 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"38673
+[s S842 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+]
+"38673
+[u S846 . 1 `S835 1 . 1 0 `S842 1 . 1 0 ]
+"38673
+"38673
+[v _T0CONbits T0CONbits `VES846  1 e 1 @4053 ]
+"38728
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"38747
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+[s S1227 . 1 `uc 1 RX_NINE 1 0 :1:0 
+`uc 1 TX_NINE 1 0 :1:1 
+`uc 1 FRAME_ERROR 1 0 :1:2 
+`uc 1 OVERRUN_ERROR 1 0 :1:3 
+`uc 1 fill 1 0 :4:4 
+]
+"9 /opt/microchip/xc8/v1.34/sources/pic18/plib/USART/u2defs.c
+[u S1233 USART2 1 `uc 1 val 1 0 `S1227 1 . 1 0 ]
+[v _USART2_Status USART2_Status `S1233  1 e 1 0 ]
+"40 /home/james/github/xs400_ecu.git/src/main.c
+[v _main main `(v  1 e 0 0 ]
+{
+"62
+} 0
+"464 /opt/microchip/xc8/v1.34/sources/common/doprnt.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"466
+[v printf@ap ap `[1]*.39v  1 a 2 39 ]
+"499
+[v printf@c c `c  1 a 1 41 ]
+"464
+[v printf@f f `*.32Cuc  1 p 2 37 ]
+"1541
+} 0
+"29 /home/james/github/xs400_ecu.git/src/user.c
+[v _putch putch `(v  1 e 0 0 ]
+{
+[v putch@data data `uc  1 a 1 wreg ]
+[v putch@data data `uc  1 a 1 wreg ]
+[v putch@data data `uc  1 a 1 36 ]
+"34
+} 0
+"15 /opt/microchip/xc8/v1.34/sources/pic18/plib/USART/u2write.c
+[v _Write2USART Write2USART `(v  1 e 0 0 ]
+{
+[v Write2USART@data data `uc  1 a 1 wreg ]
+[v Write2USART@data data `uc  1 a 1 wreg ]
+"17
+[v Write2USART@data data `uc  1 a 1 35 ]
+"25
+} 0
+"36 /home/james/github/xs400_ecu.git/src/user.c
+[v _InitApp InitApp `(v  1 e 0 0 ]
+{
+"106
+} 0
+"12 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t3write.c
+[v _WriteTimer3 WriteTimer3 `(v  1 e 0 0 ]
+{
+[u S877 Timers 2 `ui 1 lt 2 0 `[2]uc 1 bt 2 0 ]
+"14
+[v WriteTimer3@timer timer `S877  1 a 2 37 ]
+"12
+[v WriteTimer3@timer3 timer3 `ui  1 p 2 35 ]
+"19
+} 0
+"16 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t0write.c
+[v _WriteTimer0 WriteTimer0 `(v  1 e 0 0 ]
+{
+[u S877 Timers 2 `ui 1 lt 2 0 `[2]uc 1 bt 2 0 ]
+"18
+[v WriteTimer0@timer timer `S877  1 a 2 37 ]
+"16
+[v WriteTimer0@timer0 timer0 `ui  1 p 2 35 ]
+"24
+} 0
+"94 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t3open.c
+[v _OpenTimer3 OpenTimer3 `(v  1 e 0 0 ]
+{
+[v OpenTimer3@config config `uc  1 a 1 wreg ]
+[v OpenTimer3@config config `uc  1 a 1 wreg ]
+[v OpenTimer3@config1 config1 `uc  1 p 1 35 ]
+"96
+[v OpenTimer3@config config `uc  1 a 1 37 ]
+"133
+} 0
+"18 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t0open.c
+[v _OpenTimer0 OpenTimer0 `(v  1 e 0 0 ]
+{
+[v OpenTimer0@config config `uc  1 a 1 wreg ]
+[v OpenTimer0@config config `uc  1 a 1 wreg ]
+"20
+[v OpenTimer0@config config `uc  1 a 1 35 ]
+"31
+} 0
+"118 /opt/microchip/xc8/v1.34/sources/pic18/plib/USART/u2open.c
+[v _Open2USART Open2USART `(v  1 e 0 0 ]
+{
+[v Open2USART@config config `uc  1 a 1 wreg ]
+[v Open2USART@config config `uc  1 a 1 wreg ]
+[v Open2USART@spbrg spbrg `ui  1 p 2 35 ]
+"120
+[v Open2USART@config config `uc  1 a 1 37 ]
+"165
+} 0
+"16 /home/james/github/xs400_ecu.git/src/system.c
+[v _ConfigureOscillator ConfigureOscillator `(v  1 e 0 0 ]
+{
+"36
+} 0
+"55 /home/james/github/xs400_ecu.git/src/interrupts.c
+[v _low_isr low_isr `IIL(v  1 e 0 0 ]
+{
+"58
+} 0
+"20
+[v _high_isr high_isr `II(v  1 e 0 0 ]
+{
+"52
+} 0
+"16 /opt/microchip/xc8/v1.34/sources/pic18/plib/Timers/t0write.c
+[v i2_WriteTimer0 WriteTimer0 `(v  1 e 0 0 ]
+{
+[u S877 Timers 2 `ui 1 lt 2 0 `[2]uc 1 bt 2 0 ]
+[v i2WriteTimer0@timer WriteTimer0 `S877  1 a 2 19 ]
+[v i2WriteTimer0@timer0 timer0 `ui  1 p 2 17 ]
+"24
+} 0
+"108 /home/james/github/xs400_ecu.git/src/user.c
+[v _doHeartBeat doHeartBeat `(v  1 e 0 0 ]
+{
+"110
+} 0
+"17 /opt/microchip/xc8/v1.34/sources/pic18/plib/USART/u2read.c
+[v _Read2USART Read2USART `(uc  1 e 1 0 ]
+{
+"19
+[v Read2USART@data data `uc  1 a 1 17 ]
+"39
+} 0
