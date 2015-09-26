@@ -1,0 +1,7 @@
+This project started as a fork from pic18f46k80_playground.git.  The playground project was me playing around with a breadboard and a 18f46k80, the big brother of the 18f26k80 used here.
+
+The KiCAD project, schematic, gerbers, etc. are in v3_kicad.tar.gz.
+
+The board started as a custom version of the microsquirt ECU for a 1980 Yamaha XS400.  My bike is in pieces, and I blew the engine up for the second time, so progress on this will be slow until I have proper motivation.
+
+First steps are going to coincide building up the wiring harness.  So, handlebar controls, then ignition coils and rev limiter.
