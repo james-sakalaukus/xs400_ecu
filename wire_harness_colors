@@ -1,0 +1,29 @@
+12VDC from battery/rectifier/ to fuse: - Red
+12VDC Main fuse to On switch: red
+12VDC after on switch - brown
+Ground: black
+
+Lights: Light Blue
+High beams: yellow
+brake lights: yellow
+
+Right turn: green
+Left turn: (different brown) OR (green/brown) OR (different green)
+Panel Turn Indicator: takes left/right hot wires
+
+Ignition coils: orange and gray to PCB
+
+Brown to fuse: red/white out to engine stop switch
+red/white from engine stop switch to:
+  Both Ignition coils
+  Starter Solenoid
+  
+Tach Pick Up:
+  white/red - right coil
+  white/green - left coil
+  blue/white - center wire
+
+Two injector wires
+
+11 signal wires
+
